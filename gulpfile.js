@@ -6,8 +6,8 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var pump = require('pump');
-var runSequence = require('run-sequence');
-var htmlMin = require('gulp-htmlmin');
+    var runSequence = require('run-sequence');
+    var htmlMin = require('gulp-htmlmin');
 
 
 
@@ -15,32 +15,32 @@ var htmlMin = require('gulp-htmlmin');
 
 
 
-gulp.task('sass' , function(){
-    return gulp.src('app/scss/**/*.scss')
-    .pipe(sass())  // ***** scss converted to css *****
-    .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.reload({
-        stream: true
-    }))
-});
+    gulp.task('sass' , function(){
+        return gulp.src('app/scss/styles.scss')
+            .pipe(sass())  // ***** scss converted to css *****
+            .pipe(gulp.dest('app/css'))
+            .pipe(browserSync.reload({
+                stream: true
+            }))
+    });
 
-gulp.task('browserSync', function(){
-    browserSync.init({
-        server: {
-           baseDir: './dist/'
-        },
-    })
-});
+    gulp.task('browserSync', function(){
+        browserSync.init({
+            server: {
+                baseDir: './dist/'
+            },
+        })
+    });
 
-gulp.task('useref', function(){
-    return gulp.src('app/*.html')
-    .pipe(useref())
-        .pipe(gulpIf('*.js', uglify()))
-        .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist/'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
+    gulp.task('useref', function(){
+        return gulp.src('app/*.html')
+            .pipe(useref())
+            .pipe(gulpIf('*.js', uglify()))
+            .pipe(gulpIf('*.css', cssnano()))
+            .pipe(gulp.dest('dist/'))
+            .pipe(browserSync.reload({
+                stream: true
+            }))
 });
 
 

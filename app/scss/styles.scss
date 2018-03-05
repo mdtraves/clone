@@ -1,14 +1,17 @@
+@import "base";
+@import "header";
+@import "fonts";
+@import "hero";
+@import "modules";
+@import "colors";
+
 body {
     background-color: #dddddd;
 }
 
-.heroDiv {
-    #heroImg {
-        width: 100%;
-    }
-}
 
 .noPadMar {
   padding: 0;
   margin: 0;
 }
+
