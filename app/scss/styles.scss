@@ -5,9 +5,6 @@
 @import "modules";
 @import "colors";
 
-body {
-    background-color: #dddddd;
-}
 
 
 .noPadMar {
@@ -15,3 +12,6 @@ body {
   margin: 0;
 }
 
+img {
+  width: 100%;
+}
