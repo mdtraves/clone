@@ -11,7 +11,7 @@
   color: white; }
 
 body {
-  font-family: 'Overlock', cursive, serif; }
+  font-family: 'Exo', cursive, serif; }
 
 .description-text {
   font-size: 3em;
@@ -26,15 +26,13 @@ body {
     .banner-thin ul li {
       display: inline;
       margin: 0 10px; }
-      .banner-thin ul li svg {
-        margin-right: 3px; }
 
 @media screen and (max-width: 768px) {
   .banner-thin {
     display: none; } }
 
 .hero {
-  background-image: linear-gradient(rgba(10, 61, 42, 0.95), rgba(10, 61, 42, 0.5)), url("/images/front.jpg");
+  background-image: linear-gradient(#0a3d2a, rgba(10, 61, 42, 0.6)), url("/images/front.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -76,6 +74,9 @@ body {
 
 .white {
   color: white; }
+
+svg {
+  margin-right: 8px; }
 
 .noPadMar {
   padding: 0;

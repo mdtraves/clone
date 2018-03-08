@@ -8,9 +8,7 @@
     li {
       display: inline;
       margin: 0 10px;
-      svg {
-        margin-right: 3px;
-      }
+
     }
   }
 }
@@ -24,7 +22,7 @@
 // hero //
 
 .hero {
-  background-image: linear-gradient(rgba(10, 61, 42, 0.95), rgba(10, 61, 42, 0.5)),
+  background-image: linear-gradient(rgba(10, 61, 42, 1), rgba(10, 61, 42, 0.6)),
   url("/images/front.jpg");
   background-size: cover;
   background-repeat: no-repeat;

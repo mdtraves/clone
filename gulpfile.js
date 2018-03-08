@@ -28,6 +28,7 @@ var pump = require('pump');
         browserSync.init({
             server: {
                 baseDir: './dist/'
+
             },
         })
     });
