@@ -2,8 +2,11 @@ body {
   font-family: 'Exo', cursive, serif;
 }
 
-.description-text {
-  font-size: 3em;
-  text-align: center;
-  padding: 100px;
+h3 {
+  font-size: 1.4em;
+}
+
+p, ul, li {
+  font-size: .9em;
+  font-weight: 300;
 }

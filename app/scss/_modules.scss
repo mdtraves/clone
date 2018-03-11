@@ -1,14 +1,15 @@
 // thin banner //
 
 .banner-thin {
+  line-height: 13px;
   text-align: center;
   ul {
-    padding: 4px;
+    padding-bottom: 2px;
     margin-bottom: 0;
     li {
       display: inline;
-      margin: 0 10px;
-
+      font-size: 0.45em;
+      font-weight: 500;
     }
   }
 }
@@ -19,33 +20,13 @@
  }
 }
 
-// hero //
 
-.hero {
-  background-image: linear-gradient(rgba(10, 61, 42, 1), rgba(10, 61, 42, 0.6)),
-  url("/images/front.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 600px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #fff;
-  text-align: center;
-
-  h1{
-    font-size: 4em;
-  }
-}
 
 //  four-block //
 
 .four-block {
   img{
-    margin: 20px 0;
+    margin-top: 15px;
   }
 }
 
@@ -53,22 +34,24 @@
 
 #map {
   width: 100%;
-  height: 400px;
-  margin-bottom: 50px;
+  height: 300px;
+  margin-top: 15px;
+  margin-bottom: -5px;
   border:none;
 }
 
 // 3 block info section //
 
 .box3 {
-  height: 400px;
+  height: 300px;
   color: #fff;
   text-align: center;
+  margin-top: 15px;
   .inner {
     background-color: $primary-green;
     margin: 0 1px 20px 1px;
     height: 100%;
-  }
+      }
     }
 
 // footer //
@@ -80,5 +63,54 @@
     a{
       display: inline;
     }
+   }
+  }
+
+// info box section //
+
+.info {
+    margin-top: 5px;
+  h3 {
+    padding: 20px 0px;
+    }
+  a {
+    color: #fff;
+    }
+  ul {
+    list-style-type: none;
+    padding: 0;
+   }
+  }
+
+.description {
+
+  text-align: center;
+  color: $primary-green;
+
+  .description-text {
+
+    margin-top: 25px;
+  }
+  p {
+
+    padding: 25px;
+  }
+  .activities {
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+footer {
+  background-color: $primary-green;
+  font-size: 8px;
+  padding: 5px;
+  margin-top: 35px;
+  .footer-nav {
+  a {
+    padding: 5px;
+    color: #fff;
   }
   }
+}
